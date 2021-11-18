@@ -1,0 +1,17 @@
+--cpu ARM7TDMI
+".\objects\startup.o"
+".\objects\candidatos_actualizar_arm_c.o"
+".\objects\candidatos_propagar_arm.o"
+".\objects\candidatos_actualizar_arm.o"
+".\objects\reiniciarpll.o"
+".\objects\sudoku_2021.o"
+".\objects\cola.o"
+".\objects\gestor_alarmas.o"
+".\objects\gestor_energia.o"
+".\objects\gestor_io.o"
+".\objects\gestor_pulsacion.o"
+".\objects\timer0.o"
+".\objects\timer1.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x40000000 --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\sudoku_2021.map" -o .\Objects\sudoku_2021.axf
